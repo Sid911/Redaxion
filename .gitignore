@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python3
+/redaxion/env/
+/redaxion/venv/
+/redaxion/*/__pycache__/
+/redaxion/*/*/__pycache__/
+/redaxion/*/*/*/__pycache__/
