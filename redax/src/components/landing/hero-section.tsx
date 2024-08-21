@@ -4,11 +4,13 @@ import { ArrowRightIcon } from '@radix-ui/react-icons'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { Button } from '../ui/button'
-import TextShimmer from '../text-shimmer'
+// import TextShimmer from './text-shimmer'
 import { BorderBeam } from '../magicui/border-beam'
 import Image from 'next/image'
 import heroLight from '@/public/hero-light.png'
 import heroDark from '@/public/hero-dark.png'
+import TextShimmer from '../buildingcomp/text-shimmer'
+import { TabsDemo } from '../tabsEx'
 
 export default function HeroSection() {
     const ref = useRef(null)
@@ -16,7 +18,7 @@ export default function HeroSection() {
     return (
         <section
             id="hero"
-            className="relative mx-auto mt-32 max-w-7xl px-6 text-center md:px-8"
+            className="relative mx-auto mt-16 max-w-7xl px-6 text-center md:px-8"
         >
             <h1 className="animate-fade-in -translate-y-4 text-balance bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-7xl dark:from-white dark:to-white/40">
             Effortless and Secure Redaction  
@@ -40,6 +42,12 @@ export default function HeroSection() {
                     {' '}
                     <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                 </TextShimmer>
+            </div>
+            <div
+            ref={ref}
+            className="animate-fade-up relative mt-32 opacity-0 [--animation-delay:400ms] [perspective:2000px] ]"
+            >
+            <TabsDemo/>
             </div>
         </section>
     )
