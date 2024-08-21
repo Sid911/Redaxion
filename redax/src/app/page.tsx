@@ -1,3 +1,4 @@
+'use client'
 import HeroSection from "@/components/landing/hero-section";
 import Particles from "@/components/magicui/particles";
 import { useTheme } from "next-themes";
@@ -13,7 +14,6 @@ export default function Home() {
   }, [theme]);
   return (
     <>
-    {/* <div>hii</div> */}
     <HeroSection/>
     <Particles
         className="absolute inset-0 -z-10"

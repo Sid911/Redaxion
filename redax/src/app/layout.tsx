@@ -20,13 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-          {/* <ThemeProvider attribute="class" defaultTheme="system">
-            <NavbarDemo />
+          <ThemeProvider attribute="class" defaultTheme="system">
+            {/* <NavbarDemo /> */}
             <ModeToggle/>
             <div className="absolute w-full top-24">{children}</div>
             <Toaster />
-          </ThemeProvider> */}
-          {children}
+          </ThemeProvider>
+          {/* {children} */}
       </body>
     </html>
   );
