@@ -1,6 +1,7 @@
 'use client'
 import HeroSection from "@/components/landing/hero-section";
 import Particles from "@/components/magicui/particles";
+import { TabsDemo } from "@/components/tabsEx";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useEffect, useState } from "react";
