@@ -11,6 +11,7 @@ import heroLight from '@/public/hero-light.png'
 import heroDark from '@/public/hero-dark.png'
 import TextShimmer from '../buildingcomp/text-shimmer'
 import { TabsDemo } from '../tabsEx'
+import Link from 'next/link'
 
 export default function HeroSection() {
     const ref = useRef(null)
@@ -37,11 +38,13 @@ export default function HeroSection() {
                 <ArrowRightIcon className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
             </Button> */}
             <div className="backdrop-filter-[12px] animate-fade-in group inline-flex h-7 -translate-y-4 items-center justify-between gap-1 rounded-lg border dark:border-white/10  border-black/10 bg-black/5 dark:bg-white/10 px-3 text-base text-white opacity-0 transition-all ease-in hover:cursor-pointer hover:bg-white/20 dark:text-black py-4">
+                <Link href="/upload">
                 <TextShimmer className="inline-flex items-center justify-center">
                     <span>✨ Get Started</span>
                     {' '}
                     <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                 </TextShimmer>
+                </Link>
             </div>
             {/* <div
             ref={ref}
