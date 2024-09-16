@@ -24,7 +24,7 @@ export default function RootLayout({
             {/* <NavbarDemo /> */}
             <ModeToggle/>
             <div className="absolute w-full ">{children}</div>
-            <Toaster />
+            <Toaster closeButton richColors/>
           </ThemeProvider>
       </body>
     </html>
